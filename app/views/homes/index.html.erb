@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width,
+　initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>koibumi</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+  <div class="header">
+    <div class="header-logo">
+    <a href="/">Umbrella</a>
+    </div>
+
+  </div>
+  <div class="main">
+  　　　　　　　　　　　　　　　　　　　　　　　　 <% if session[:nickname] %>
+
+   <div class="user_twitter-id"><%= "#{session[:nickname]}さん、こんにちは" %></div>
+   <% end %>
+
+  <div class="logout">
+
+   <P><a href="/homes/logout">
+               <button type="button">ログアウト</button>
+           </a></p>
+  </div>
+
+<div class="atesaki">宛先</div>
+
+
+      <div class="twitter-id_input">
+        <div class= "twitter-logo">
+        <i class="fab fa-twitter"></i>
+      </div>
+
+<div class="atoma">@</div>
+      <%= form_tag("/homes/content") do %>
+          <input type="name" name="content" placeholder="アカウントIDを入力">
+        <%  if session[:content1] || session[:content2] %>
+          <input type="submit" value="変更">
+          <% else %>
+          <input type="submit" value="登録">
+          <% end %>
+          <% end %>
+    </div>
+    <div>
+      <% if session[:userdate3] && session[:userdate2] %>
+      <%= "#{30 - session[:userdate2]}日経過後に変更することができます。"%>
+      <% end %>
+    <% if session[:content1] || session[:content2] %>
+    <div class="result">
+     <P><a href="/result">
+                 結果を確認する</a><P>
+                 </DIV><% end %>
+
+    <div class="Explanatory_text">
+    <p>Umbrellaは、両想いである「恋人未満」の二人を「恋人」に導くサービスです。</p>
+    <p>好きな相手のTwitterIDを入力し登録してください。両想いだった場合、二人にお知らせします。</p>
+    <p>それ以外の時にあなたの登録先が誰かに知られることはありません。</p>
+  </div>
+  <ul>
+    <li>送信できるTwitterIDは1件のみです。</li>
+    <li>送信後30日間は相手のTwitterIDを変更することができません。</li>
+
+
+  </ul>
+
+
+
+ </div>
+  <div class="footer">
+  <h3></h3>
+  </div>
+
+  </body>
+</html>

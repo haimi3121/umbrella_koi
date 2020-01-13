@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+  <head>
+    <meta name="viewport" content="width=device-width,
+  　initial-scale=1, maximum-scale=1"> 
+    <meta charset="utf-8">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>koibumi</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+  <div class="header">
+    <div class="header-logo">
+    <a href="/">Umbrella</a>
+  </div>
+  <div class="main">
+    <div class="container">
+<a href="/auth/twitter/" class="btn-open">Twitterでログイン</a>
+</div>
+
+</div>

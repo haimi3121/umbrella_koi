@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>koibumi</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width,
+　initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+  <div class="header">
+    <div class="header-logo">
+    <a href="/">Umbrella</a>
+  </div>
+  <div class="main">
+  　　　　　　　　　　　　　　　　　　　　　　　　 <% if session[:nickname] %>
+
+   <div class="user_twitter-id"><%= "#{session[:nickname]}さん、こんにちは" %></div>
+  <% end %>
+
+  <div class="logout">
+
+
+   <P><a href="/homes/logout">
+               <button type="button">ログアウト</button>
+           </a></p>
+  </div>
+
+  <div class="Explanatory_text1">
+<% if session[:result] %>
+<%="おめでとうございます！あなたと@#{session[:content1]}さんは両想いです。"%><br><br><br><br>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Umbrellaで両想いになりました！" data-url="http://localhost:3000/" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ で喜びを共有しよう！
+
+<% elsif session[:result2]%>
+<%="おめでとうございます。あなたと@#{session[:content2]}さんは両想いです。"%><br><br><br><br>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Umbrellaで両想いになりました！" data-url="http://localhost:3000/" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ で喜びを共有しよう！
+<% end %>
+<% unless session[:result] || session[:result2] %>
+<%= "@#{session[:content2]}さんを登録しました。" %><br>
+<%= "相手があなたを登録した場合、"%><br>
+<%= "このページでお知らせします。" %><br>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Umbrellaに好きな人を登録しました！" data-url="http://localhost:3000/" data-lang="ja" data-show-count="false">tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<% end %>
+
+
+  </div>
