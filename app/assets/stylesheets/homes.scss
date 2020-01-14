@@ -203,7 +203,7 @@ ul{
       font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
       text-align: center;
       position: relative;
-      top: 250px;
+      top: 110px;
 
     }
     .btn-open {
@@ -211,13 +211,13 @@ ul{
       width: 180px;
       height:50px;
       text-align: center;
-      background-color: #9ec34b;
+      background-color: #00acee;
       font-size: 16px;
       line-height: 52px;
       color: #FFF;
       text-decoration: none;
       font-weight: bold;
-      border: 2px solid #9ec34b;
+      border: 2px solid #00acee;
       position: relative;
       overflow: hidden;
       z-index: 1;
@@ -236,7 +236,7 @@ ul{
       z-index: -1;
     }
     .btn-open:hover{
-      color: #9ec34b;
+      color: #00acee;
     }
     .btn-open:hover:after{
       height: 240%;
@@ -321,5 +321,30 @@ ul{
     font-size: 14px;
     text-align: left;
   }
+.howto{
+  position: relative;
+  top: 150px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.howtouse{
+  position: relative;
+  top: 130px;
+  display: inline-block;
+  border: 3px solid #7094bb;
+  padding-left: 80px;
+  padding-right: 80px;
+  line-height: 50%;
+  font-weight: bold;
+  color: #7094bb;
+}
+.ps{
+  position: relative;
+  top: 160px;
+}
+.top{
+  position: relative;
+  top: 40px;
 
+}
 }

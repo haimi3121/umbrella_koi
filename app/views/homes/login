@@ -4,7 +4,7 @@
 
   <head>
     <meta name="viewport" content="width=device-width,
-  　initial-scale=1, maximum-scale=1"> 
+  　initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>koibumi</title>
@@ -15,9 +15,23 @@
     <div class="header-logo">
     <a href="/">Umbrella</a>
   </div>
-  <div class="main">
+  <div class="main"><br>
+    <div class="top">
+    <P>「あの時告白しておけばよかった」</P>
+    <P>「あの時告白しなければよかった」</P>
+    <P>一か八かの告白をもうする必要はありません。</P>
+</div>
     <div class="container">
 <a href="/auth/twitter/" class="btn-open">Twitterでログイン</a>
 </div>
-
+<div class="howto">
+<p>使い方</P></div>
+<div class="howtouse">  <p>Twitterでログイン</p><p>↓</p>
+  <p>相手のTwitterIDを登録</P><p>↓</p>
+    <p>結果を確認する</P>
+  </div>
+<div class="ps">
+  <P>一度登録すると何時でも結果を確認できるから</p>
+  <P>相手が後からあなたを登録した場合でも大丈夫！</p>
+  </div>
 </div>
