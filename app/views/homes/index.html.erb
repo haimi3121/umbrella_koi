@@ -2,13 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width,
-　initial-scale=1, maximum-scale=1">
+  　initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>koibumi</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
   <body>
+    <div class="wrap">
   <div class="header">
     <div class="header-logo">
     <a href="/">Umbrella</a>
@@ -36,9 +37,10 @@
         <i class="fab fa-twitter"></i>
       </div>
 
-<div class="atoma">@</div>
+
+
       <%= form_tag("/homes/content") do %>
-          <input type="name" name="content" placeholder="アカウントIDを入力">
+      <label>@<input type="name" name="content" placeholder="アカウントIDを入力"></label>
         <%  if session[:content1] || session[:content2] %>
           <input type="submit" value="変更">
           <% else %>
@@ -59,10 +61,10 @@
     <div class="Explanatory_text">
     <p>Umbrellaは、両想いである「恋人未満」の</p>
     <p>二人を「恋人」に導くサービスです。</p>
-    <p>好きな相手のTwitterIDを入力し登録してください。</p>
+    <p>好きな相手のTwitterIDを登録してください。</p>
     <p>両想いだった場合、二人にお知らせします。</p>
     <p>それ以外の時にあなたの登録先が他の誰かや</P>
-      <p>本人に知られることはありません。</p>
+      <p>相手に知られることはありません。</p>
   </div>
   <ul>
     <li>送信できるTwitterIDは1件のみです。</li>
@@ -77,6 +79,6 @@
   <div class="footer">
   <h3></h3>
   </div>
-
+<!-- /.wrap --></div>
   </body>
 </html>

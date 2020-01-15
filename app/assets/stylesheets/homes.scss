@@ -4,8 +4,8 @@
 body{
   text-align: center;
   font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
-  
-
+  margin: 0 auto;
+table-layout: fixed;
 
 }
 
@@ -264,7 +264,7 @@ ul{
       font-size: 20px;
     }
     input[type="name"]{
-      margin-left: 30px;
+      margin-left: 0px;
       position: relative;
       padding:0;
       height: 25px;
@@ -281,11 +281,7 @@ ul{
       -webkit-appearance: none;
 
     }
-    .atoma {
-      position:absolute;
-      top: 235px;
-      right: 320px;
-    }
+
     .atesaki{
       padding-top: 0px;
       padding-right: 0px;
@@ -349,5 +345,8 @@ ul{
   position: relative;
   top: 15px;
 
+}
+.wrap {
+	overflow: hidden;
 }
 }
