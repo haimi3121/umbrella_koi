@@ -43,7 +43,7 @@
 <% unless session[:result] || session[:result2] %>
 <%= "@#{session[:content2]}さんを登録しました。" %><br>
 <%= "相手があなたを登録した場合、"%><br>
-<%= "このページでお知らせします。" %><br>
+<%= "このページでお知らせします。" %><br><br><br>
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Umbrellaに好きな人を登録しました！" data-url="http://localhost:3000/" data-lang="ja" data-show-count="false">tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <% end %>
 
