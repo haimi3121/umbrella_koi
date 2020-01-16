@@ -7,6 +7,7 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>Umbrella</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="wrap">
@@ -33,13 +34,13 @@
 <% if session[:result] %>
 <%="おめでとうございます！"%><br>
 <%= "あなたと@#{session[:content1]}さんは両想いです。"%><br><br>
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Umbrellaで両想いになりました！" data-url="https://umbrellasan.herokuapp.com/" data-hashtags="Umbrellaで両想い" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Umbrellaで両想いになりました！" data-url="https://umbrellasan.herokuapp.com/" data-hashtags="Umbrellaで両想い" data-show-count="false">Tweet</a>
  で喜びを共有しよう！
 
 <% elsif session[:result2]%>
 <%="おめでとうございます。"%><br>
 <%= "あなたと@#{session[:content2]}さんは両想いです。"%><br><br>
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Umbrellaで両想いになりました！" data-url="https://umbrellasan.herokuapp.com/" data-hashtags="Umbrellaで両想い" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Umbrellaで両想いになりました！" data-url="https://umbrellasan.herokuapp.com/" data-hashtags="Umbrellaで両想い" data-show-count="false">Tweet</a>
  で喜びを共有しよう！
 <% end %>
 <% unless session[:result] || session[:result2] %>
@@ -48,7 +49,7 @@
 <%= "このページでお知らせします。" %><br><br><br>
 <%= "あなたが好きな人を登録したことを共有すると"%><br>
 <%= "あなたのことを好きな人も登録するかも？" %>
-
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Umbrellaに好きな人を登録しました！" data-url="https://umbrellasan.herokuapp.com/" data-hashtags="Umbrellaで両想い" data-show-count="false">Tweet</a>
 <% end %>
 
  </div>
