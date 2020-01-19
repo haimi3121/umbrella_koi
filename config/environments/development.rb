@@ -52,7 +52,7 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
-  url_to_url_to_image("logo.jpg", host: "https://umbrelasan.herokuapp.com")
+  url_to_url_to_image("logo.jpg", host: "https://umbrellasan.herokuapp.com")
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
