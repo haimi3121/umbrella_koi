@@ -52,7 +52,8 @@
  で喜びを共有しよう！
 <% end %>
 <% unless session[:result] || session[:result2] %>
-<%= "@#{session[:content2]}さんを登録しました。" %><br>
+<div class="lovename3">
+<%= "@#{session[:content2]}"%></div><%="さんを登録しました。" %><br>
 <%= "相手があなたを登録した場合、"%><br>
 <%= "このページでお知らせします。" %><br><br><br>
 <%= "あなたが好きな人を登録したことを共有すると"%><br>
