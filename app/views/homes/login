@@ -28,8 +28,7 @@
     <P>もう一か八かの告白をする必要はありません。</P>
     <p>Umbrellaで好きな人の気持ちを確かめよう！<P>
 </div>
-
-
+<%= image_tag '/logo.jpg'%>
 
     <div class="container">
 <a href="/auth/twitter/" class="btn-open">Twitterでログイン</a>
