@@ -9,6 +9,12 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>Umbrella</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="twitter:card" content="Summary" /> <!--①-->
+    <meta name="twitter:site" content="@itshrk" /> <!--②-->
+    <meta property="og:url" content="https://umbrellasan.herokuapp.com/" /> <!--③-->
+    <meta property="og:title" content="Umbrellaで好きな人の気持ちを確かめよう" /> <!--④-->
+    <meta property="og:description" content="使い方はTwitterでログインして好きな人のTwitterIDを登録するだけ！" /> <!--⑤-->
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1217468925442543616/ffk18YKW_400x400.jpg" /> <!--⑥-->
   </head>
   <body>
   <div class="header">
