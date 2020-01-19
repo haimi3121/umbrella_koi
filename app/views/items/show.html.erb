@@ -34,7 +34,9 @@
 <% if session[:result] %>
 <%="おめでとうございます！"%><br>
 <%= "あなたと"%>
+<div class="lovename1">
 <%="@#{session[:content1]}"%>
+</div>
 <%="さんは両想いです。"%><br><br>
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Umbrellaで両想いになりました！" data-url="https://umbrellasan.herokuapp.com/" data-hashtags="Umbrellaで両想い" data-show-count="false">Tweet</a>
  で喜びを共有しよう！
@@ -42,7 +44,9 @@
 <% elsif session[:result2]%>
 <%="おめでとうございます！"%><br>
 <%= "あなたと"%>
+<div class="lovename2">
 <%="@#{session[:content2]}"%>
+</div>
 <%="さんは両想いです。"%><br><br>
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Umbrellaで両想いになりました！" data-url="https://umbrellasan.herokuapp.com/" data-hashtags="Umbrellaで両想い" data-show-count="false">Tweet</a>
  で喜びを共有しよう！
