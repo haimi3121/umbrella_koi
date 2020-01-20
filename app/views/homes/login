@@ -14,7 +14,7 @@
     <meta property="og:url" content="https://umbrellasan.herokuapp.com/" /> <!--③-->
     <meta property="og:title" content="Umbrellaで好きな人の気持ちを確かめよう" /> <!--④-->
     <meta property="og:description" content="使い方はTwitterでログインして好きな人のTwitterIDを登録するだけ！" /> <!--⑤-->
-    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1217468925442543616/ffk18YKW_400x400.jpg" /> <!--⑥-->
+    <meta name="twitter:image" content="<%= asset_url('logo.jpg') %>" /><!--⑥-->
   </head>
   <body>
   <div class="header">
