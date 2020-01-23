@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   post  '/homes/content', to: 'sessions#content'
   get '/homes/post', to: 'homes#post'
   get '/homes/create', to: 'homes#create'
+  get '/homes/Cancel', to: 'homes#cancel'
   get '/result' , to: 'items#result'
   get '/show' , to: 'items#show'
   get '/timer' , to: 'timers#time'
