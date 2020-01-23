@@ -29,6 +29,8 @@ def update
   redirect_to '/show'
 end
 
+def post
+end
 
 
 
