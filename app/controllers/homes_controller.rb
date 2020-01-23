@@ -31,7 +31,10 @@ end
 
 def post
 end
-
+  def cancel
+    session[:content1] = nil
+    redirect_to root_path
+  end
 
 
 end
