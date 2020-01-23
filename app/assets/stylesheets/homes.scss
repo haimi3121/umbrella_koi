@@ -200,6 +200,7 @@ ul{
   a {
      text-decoration:none;
      color: white;
+     display: block;
 
   }
   .header-logo{
@@ -395,7 +396,6 @@ ul{
 }
 .lovename2{
   color: #05d1ff;
-  display:inline;
 }
 .lovename3{
   color: #05d1ff;
@@ -408,14 +408,17 @@ ul{
   display: block;
   background-color: #9ad9ea;
   width:60%;
+  color: #7093cc;
+  text-align: center;
 }
 .no{
   border: 3px solid white;
   padding:10px;
   margin-top: 15px;
-  display: block;
   background-color: #9ad9ea;
+  color: #7093cc;
   width:60%;
+  text-align: center;
 }
 
 }
