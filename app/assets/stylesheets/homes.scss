@@ -418,10 +418,21 @@ ul{
   padding:10px;
   margin-top: 15px;
   background-color: #9ad9ea;
-  color: #7093cc;
+
   width:60%;
   margin-right: auto;
   margin-left: auto;
 }
+a.yes{
+  color: #7093cc;
+  text-decoration:none;
 
+  display: block;
+}
+a.no{
+  color: #7093cc;
+  text-decoration:none;
+  
+  display: block;
+}
 }
