@@ -22,7 +22,7 @@
 
    <div class="user_twitter-id"><%= "#{session[:nickname]}さん、こんにちは" %></div>
    <% end %>
-   <% if session[:loving] %>
+   <% if session[:loving] > 0 %>
    <Div class="user_twitter-id"><%= "あなたのことを好きな人が#{session[:loving]}人います" %></div>
      <% end %>
   <div class="logout">
