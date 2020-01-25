@@ -33,3 +33,4 @@ class ItemsController < ApplicationController
     session[:content1] = nil
     session[:content2] = nil
   end
+  end
