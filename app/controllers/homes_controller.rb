@@ -40,7 +40,7 @@ end
   end
 def destroy
 end
-def destroy
+def destroy2
   @userdates20  = User.find_by(twitter: session[:twitter])
   @userdates20.username = nil
   @userdates20.save
