@@ -26,9 +26,7 @@ class ItemsController < ApplicationController
 
   end
   def destroy
-    @userdates20  = User.find_by(twitter: session[:twitter])
-    @userdates20.username = session[:content100]
-    @userdates20.save
+  
     session[:content1] = nil
     session[:content2] = nil
     redirect_to root_path
