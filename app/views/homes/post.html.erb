@@ -31,7 +31,9 @@
   </div>
 
   <div class="Explanatory_text1">
-<%="@#{session[:content1]}さんを登録しますか？"%><br>
+  <div class="lovename1">
+<%="@#{session[:content1]}" %></div>
+<%="さんを登録しますか？"%><br>
 <%= "登録すると30日間は変更できません。" %>
 <div class="yes">
   <a href="/homes/create">はい</a>
