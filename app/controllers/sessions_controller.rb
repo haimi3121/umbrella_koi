@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     session[:nickname] = user_data[:info][:name]
     session[:twitter] = user_data[:info][:nickname]
     @userdate10 = User.where(username: session[:twitter]).count
-    unless @userdates.nil?
+    unless @userdates10.nil?
     session[:loving] = @userdate10
   end
     @userdates  = User.find_by(twitter: session[:twitter])
