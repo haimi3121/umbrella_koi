@@ -4,12 +4,16 @@ class SessionsController < ApplicationController
     user_data = request.env['omniauth.auth']
     session[:nickname] = user_data[:info][:name]
     session[:twitter] = user_data[:info][:nickname]
+    @userdate10 = User.where(username: session[:twitter]).count
+    unless @userdates.nil?
+    session[:loving] = @userdate10
+  end
     @userdates  = User.find_by(twitter: session[:twitter])
     unless @userdates.nil?
     session[:content2] = @userdates.username
     redirect_to root_path
   else
-    
+
 redirect_to root_path
 end
   end

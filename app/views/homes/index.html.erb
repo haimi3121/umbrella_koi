@@ -7,7 +7,7 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>Umbrella</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
+
   </head>
   <body>
     <div class="wrap">
@@ -22,7 +22,8 @@
 
    <div class="user_twitter-id"><%= "#{session[:nickname]}さん、こんにちは" %></div>
    <% end %>
-
+   <% if session[:loving] %>
+   <Div class="user_twitter-id"><%= "あなたのことを好きな人が#{session[:loving]}人います" %></div>
   <div class="logout">
 
    <P><a href="/homes/logout">
