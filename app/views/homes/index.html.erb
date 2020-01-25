@@ -53,13 +53,17 @@
     </div>
     <div>
       <% if session[:userdate3] && session[:userdate2] %>
-      <%= "#{30 - session[:userdate2]}日経過後に変更することができます。"%>
+      <%= "#{30 - session[:userdate2]}日経過後に変更・登録することができます。"%>
       <% end %>
     <% if session[:content1] || session[:content2] %>
     <div class="result">
      <P><a href="/result">
                  結果を確認する</a><P>
                  </DIV><% end %>
+  <% if session[:content1] || session[:content2] %>
+  <P><div class="result">
+    <a href="/destroy">登録を削除する</a><P>
+              </DIV><% end %>
 
     <div class="Explanatory_text">
     <p>Umbrellaは、両想いである「恋人未満」の</p>

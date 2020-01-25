@@ -25,5 +25,11 @@ class ItemsController < ApplicationController
 
 
   end
-
+  def destroy
+    @userdates2  = User.find_by(twitter: session[:twitter])
+    @userdates2.username = nil
+    @userdates2.twitter = session[:twitter]
+    @userdates2.save
+    session[:content1] = nil
+    session[:content2] = nil
   end

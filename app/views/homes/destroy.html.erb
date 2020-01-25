@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width,
+  　initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+
+    <title>Umbrella</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+  </head>
+  <body>
+    <div class="wrap">
+  <div class="header">
+    <div class="header-logo">
+    <a href="/">Umbrella</a>
+    </div>
+
+  </div>
+  <div class="main">
+  　　　　　　　　　　　　　　　　　　　　　　　　 <% if session[:nickname] %>
+
+   <div class="user_twitter-id"><%= "#{session[:nickname]}さん、こんにちは" %></div>
+   <% end %>
+
+  <div class="logout">
+
+   <P><a href="/homes/logout">
+               <button type="button">ログアウト</button>
+           </a></p>
+  </div>
+
+  <div class="Explanatory_text1">
+<%="@#{session[:content1]}@#{session[:content2]}さんを削除しますか？"%><br>
+<%= "登録してから30日経過しないと新たに登録できません。" %>
+<div class="yes">
+  <a href="/items/destroy">はい</a>
+  </div>
+  <div class="no">
+  <a href="/homes/Cancel1">いいえ</a>
+
+  </div>
+
+
+
+
+ </div>
+
+
+  </div>
+
+  </body>
