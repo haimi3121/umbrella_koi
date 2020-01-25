@@ -32,5 +32,6 @@ class ItemsController < ApplicationController
     @userdates2.save
     session[:content1] = nil
     session[:content2] = nil
+    redirect_to root_path
   end
   end
