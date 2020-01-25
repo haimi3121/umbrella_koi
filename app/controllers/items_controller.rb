@@ -27,7 +27,7 @@ class ItemsController < ApplicationController
   end
   def destroy
     @userdates2  = User.find_by(twitter: session[:twitter])
-    @userdates2.username = nil
+    @userdates2.username = "0"
     @userdates2.twitter = session[:twitter]
     @userdates2.save
     session[:content1] = nil
