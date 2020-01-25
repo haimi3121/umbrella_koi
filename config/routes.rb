@@ -24,5 +24,5 @@ Rails.application.routes.draw do
   get '/timer' , to: 'timers#time'
   get '/homes/update', to: 'homes#update'
   get '/destroy', to: 'homes#destroy'
-  get '/items/destroy2', to: 'items#destory'
+  get '/homes/destroy2', to: 'homes#destory2'
 end
